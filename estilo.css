@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@font-face { 
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face{
+    font-family: 'FonteSubtitulo';
+    src: url("../_fonts/Bellota-Regular.ttf");
+}
+p{
+    text-indent: 40px;
+    text-align: justify;
+
+}
+body{
+    
+    
+    font-family:'Arial', sans-serif;
+    background-color: #ddd; 
+}
+figure.foto_com_legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto_com_legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto_com_legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    color: white;
+    background: rgba(0,0,0, .4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+    
+}
+figure.foto_com_legenda:hover figcaption{
+    opacity: 1;
+}
+
+/*Navegação do site*/
+
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 450px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;/*aumentando distância entre o bloco e a borda;*/
+    margin: 2px;
+    transition: 0.5s;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+    color: white;
+    text-decoration: underline;
+}
+
+nav#menu h1{
+    display: none;
+
+}
+
+nav#menu a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+div#interface{
+    width: 960px;
+    background-color: white; 
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0 ,0, 0.4);
+    padding: 10px;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 990px;
+    top: 90px;
+}
+
+header#cabecalho{
+    border-bottom: 1px solid #606060;
+    height: 160px;
+    background: url("../_imagens/glass-logo-peq.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 90px;
+}
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 40px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.6);
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web   4rrf    ', sans-serif;
+    font-size: 20px;
+    color: #888;
+    margin-top: 0px;
+}
+
+section#corpo{
+    display: block;
+    width: 56%;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+aside#lateral{
+    display: block;
+    width: 38%;
+    float: right;
+    margin-right: 10px;
+    background-color: #DDD;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 2px 2px 3px #606060;
+}
+
+aside#lateral h1{
+    font-family: 'fontelogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+}
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 13pt;
+    color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+footer#rodape{
+    border-top: 1px solid #606060;
+    clear: both;
+}
+footer#rodape p{
+    text-align: center;
+}
+
+h2:not(#subSemFormatacao){
+    background-color: #ddd;
+    padding: 5px;
+}
+table#especificacoes{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    
+}
+
+table#especificacoes caption{
+    color: #888;
+    font-weight: bold;
+}
+
+table#especificacoes caption span{
+    display: block;
+    float: right;
+    font-size: 8pt;
+    color: #888;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+table#especificacoes td{
+    border: 1px solid #606060;
+    padding: 10px;
+}
+table#especificacoes .topico{
+    vertical-align: top;
+    text-align: right;
+    font-weight: bold;
+    color: white;
+    background: #606060; 
+}
+
+table#especificacoes td:not(.topico){
+    vertical-align: middle;
+    text-align: left;
+    background-color: #DDD;
+}
+
+
+article#noticia_principal h2{
+    font-size: 12pt;
+    color:#606060;
+    padding-left: 10px;
+}
+
+header#cabecalho_artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color:#606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+header#cabecalho_artigo h2{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 13pt;
+    color:#cecece;
+    background-color: #fff;
+}
+
+header#cabecalho_artigo h3{
+    font-size: 12px;
+    color: #606060;
+}
+
+.direito{
+    text-align: right;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+
